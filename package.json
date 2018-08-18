@@ -3,7 +3,6 @@
   "version": "1.0.4",
   "description": "A bunch of very simple components that are styled in the Console brand",
   "main": "/dist/ui.min.js",
-  "module": "src/index.js",
   "scripts": {
     "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -i src/index.js -o dist/ui.js",
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -i src/index.js -o dist/ui.min.js",
