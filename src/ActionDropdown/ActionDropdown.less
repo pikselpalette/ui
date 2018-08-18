@@ -1,0 +1,32 @@
+@import 'themes/light';
+
+.console-ui-action-dropdown {
+  &&& {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 11px;
+
+    background-color: @background-color;
+    color: @color;
+
+    &.dark {
+      @import 'themes/dark';
+
+      background-color: @background-color;
+      color: @color;
+    }
+
+    .icon {
+      margin: 0 !important;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .text {
+      margin-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.console-ui-auto-refresh-wrapper.button {
+  &&& {
+    display: flex;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+
+    &.blue {
+      @import 'themes/blue';
+      border-color: @border-color;
+      color: @color;
+      background-color: @background-color;
+
+      &:hover {
+        background-color: @background-color-hover;
+        color: @color-hover;
+      }
+
+      &.dark {
+        @import 'themes/darkBlue';
+        border-color: @border-color;
+        color: @color;
+        background-color: @background-color;
+
+        &:hover {
+          background-color: @background-color-hover;
+          color: @color-hover;
+        }
+      }
+    }
+
+    &.green {
+      @import 'themes/green';
+      border-color: @border-color;
+      color: @color;
+      background-color: @background-color;
+
+      &:hover {
+        background-color: @background-color-hover;
+        color: @color-hover;
+      }
+
+      &.dark {
+        @import 'themes/darkGreen';
+        border-color: @border-color;
+        color: @color;
+        background-color: @background-color;
+
+        &:hover {
+          background-color: @background-color-hover;
+          color: @color-hover;
+        }
+      }
+    }
+
+    .icon {
+      margin: 0;
+    }
+  }
+}

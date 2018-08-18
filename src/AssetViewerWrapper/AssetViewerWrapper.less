@@ -1,0 +1,22 @@
+@import 'themes/light';
+
+.console-ui-asset-viewer-wrapper {
+  position: relative;
+  min-height: 90px;
+  box-shadow: none;
+  border-width: 1px;
+  border-style: solid;
+  padding-bottom: 66.67%;
+
+  background-color: @background-color;
+  border-color: @border-color;
+
+  &.dark {
+    background-color: @background-color;
+    border-color: @border-color;
+  }
+
+  &.quick-view {
+    padding-bottom: 150%;
+  }
+}

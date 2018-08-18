@@ -1,0 +1,29 @@
+@import 'themes/light';
+.console-ui-action-button {
+  &&&,
+  &&&.light {
+    display: flex;
+    width: 22px;
+    height: 222px;
+
+    .icon {
+      transform: translate(-50%, -60%);
+    }
+
+    background-color: @background-color;
+    color: @color;
+
+    &.dark {
+      @import 'themes/dark';
+
+      background-color: @background-color;
+      color: @color;
+    }
+  }
+}
+
+.console-ui-action-buttons {
+  display: flex;
+  justify-content: center;
+}
+
