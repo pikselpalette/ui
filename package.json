@@ -2,10 +2,11 @@
   "name": "@pikselpalette/ui",
   "version": "1.0.2",
   "description": "A bunch of very simple components that are styled in the Console brand",
-  "main": "/src/index.js",
+  "main": "/dist/main.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,15 +20,13 @@
     "url": "https://github.com/pikselpalette/ui/issues"
   },
   "homepage": "https://github.com/pikselpalette/ui#readme",
-  "dependencies": {
-    "babel-preset-stage-0": "^6.24.1",
+  "devDependencies": {
     "classnames": "^2.2.6",
     "less": "^3.8.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "semantic-ui-react": "^0.82.2"
-  },
-  "devDependencies": {
+    "semantic-ui-react": "^0.82.2",
+    "babel-preset-stage-0": "^6.24.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
