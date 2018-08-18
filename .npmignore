@@ -4,3 +4,4 @@ src
 webpack.config.js
 .eslintrc.js
 example
+node_modules
