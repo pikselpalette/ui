@@ -1,6 +1,6 @@
 {
   "name": "@pikselpalette/ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A bunch of very simple components that are styled in the Console brand",
   "main": "/src/index.js",
   "scripts": {
