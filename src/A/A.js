@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const A = (props) => (
+const A = props => (
   <a className="console-ui-a" {...props} />
 );
 

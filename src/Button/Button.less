@@ -1,48 +1,51 @@
 @import 'themes/light';
 .console-ui-button {
-  &&,
-  &&.primary,
-  &&.light {
-    min-height: 38px;
-    margin: 0 10px 0 0;
+  &&&&&&& {
+    &,
+    &.primary,
+    &.light {
+      min-height: 38px;
+      margin: 0 10px 0 0;
 
-    background-color: @background-color;
-    border-color: @border-color;
-    border-style: @border-style;
-    border-width: @border-width;
-    color: @color;
+      background-color: @background-color;
+      border-color: @border-color;
+      border-style: @border-style;
+      border-width: @border-width;
+      color: @color;
 
-    &:hover {
-      background-color: @background-color-hover;
-      color: @color-hover;
+      &:hover {
+        background-color: @background-color-hover;
+        color: @color-hover;
+      }
     }
-  }
 
-  &&.call-to-action {
-    @import 'themes/callToAction';
-    background-color: @background-color;
-    border-color: @border-color;
-    border-style: @border-style;
-    border-width: @border-width;
-    color: @color;
+    &.cta,
+    &.call-to-action {
+      @import 'themes/callToAction';
+      background-color: @background-color;
+      border-color: @border-color;
+      border-style: @border-style;
+      border-width: @border-width;
+      color: @color;
 
-    &:hover {
-      background-color: @background-color-hover;
-      color: @color-hover;
+      &:hover {
+        background-color: @background-color-hover;
+        color: @color-hover;
+      }
     }
-  }
 
-  &&.dark {
-    @import 'themes/dark';
-    background-color: @background-color;
-    border-color: @border-color;
-    border-style: @border-style;
-    border-width: @border-width;
-    color: @color;
+    &.dark {
+      @import 'themes/dark';
+      background-color: @background-color;
+      border-color: @border-color;
+      border-style: @border-style;
+      border-width: @border-width;
+      color: @color;
 
-    &:hover {
-      background-color: @background-color-hover;
-      color: @color-hover;
+      &:hover {
+        background-color: @background-color-hover;
+        color: @color-hover;
+      }
     }
   }
 };

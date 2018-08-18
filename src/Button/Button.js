@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Button as SemanticButton } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 import classNames from 'classnames';
 
-export const Button = ({ type = 'light',...props }) => (
-  <SemanticButton className={classNames("console-ui-button", type)} {...props} />
+const StyledButton = ({ variant = 'light', ...props }) => (
+  <Button className={classNames('console-ui-button', variant)} {...props} />
 );
 
-export default Button;
+export default StyledButton;
 
