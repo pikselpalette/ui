@@ -30,5 +30,6 @@ export {
   AssetViewerWrapper,
   AutoRefreshWrapper,
   BrowseGrid,
-  Button
+  Button,
+  CancelIcon
 };
