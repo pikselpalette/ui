@@ -6,7 +6,7 @@ const AutoRefreshWrapper = ({ theme, type, ...props }) => (
   <Button
     className={
       classNames(
-        'console-ui-auto-refresh-wrapper',
+        'palette-ui-auto-refresh-wrapper',
         'button',
         { dark: theme === 'dark' },
         { green: type === 'green' },
@@ -18,4 +18,3 @@ const AutoRefreshWrapper = ({ theme, type, ...props }) => (
 );
 
 export default AutoRefreshWrapper;
-

@@ -1,8 +1,7 @@
 import * as React from 'react';
 
 const A = props => (
-  <a className="console-ui-a" {...props} />
+  <a className="palette-ui-a" {...props} />
 );
 
 export default A;
-

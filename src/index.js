@@ -25,6 +25,15 @@ import './CancelIcon/CancelIcon.less';
 import Centered from './Centered/Centered';
 import './Centered/Centered.less';
 
+import CheckIcon from './CheckIcon/CheckIcon';
+import './CheckIcon/CheckIcon.less';
+
+import Clickable from './Clickable/Clickable';
+import './Clickable/Clickable.less';
+
+import CustomListTable from './CustomListTable';
+import './CustomListTable/CustomListTable.less';
+
 export {
   A,
   ActionButton,
@@ -35,5 +44,8 @@ export {
   BrowseGrid,
   Button,
   CancelIcon,
-  Centered
+  Centered,
+  CheckIcon,
+  Clickable,
+  CustomListTable
 };
