@@ -1,0 +1,164 @@
+@import 'themes/light';
+
+.console-ui-browse-grid {
+  .ui.table {
+    border-width: 1px;
+    border-style: solid;
+
+    border-color: @border-color-table;
+    background-color: @background-color-table;
+
+    thead th {
+      background-color: @background-color-thead-th;
+      color: @color-thead-th;
+
+      &:last-child {
+        z-index: 1;
+      }
+    }
+
+    tr {
+      &:selected {
+        td {
+          color: @color-tr-selected-td;
+          background-color: @background-color-tr-selected-td;
+
+          .action {
+            display: block;
+          }
+        }
+      }
+
+      td {
+        transition: none;
+        border-top-style: solid;
+        border-top-width: 1px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        border-top-color: @border-color-tr-td;
+
+        &:first-child,
+        &:last-child {
+          background-color: @background-color-tr-td-child;
+        }
+      }
+
+      th {
+        white-space: nowrap;
+
+        &:first-child,
+        &:last-child {
+          z-index: 1;
+          background-color: @background-color-tr-th-child;
+        }
+      }
+
+      th,
+      td {
+        &:first-child,
+        &:last-child {
+          position: sticky;
+        }
+
+        &:first-child {
+          left: 0;
+
+          td {
+            border-top: none;
+          }
+        }
+
+        &:last-child {
+          right: 0;
+        }
+      }
+    }
+
+    tbody tr:hover td {
+      background: @background-tbody-tr-hover-td;
+      color: @color-tbody-tr-hover-td;
+    }
+  }
+
+  .ui.menu {
+    border-color: @border-color-menu;
+
+    a.item {
+      color: @color-menu-item;
+      background-color: @background-color-menu-item;
+
+      &.active {
+        color: @color-menu-item-active;
+        background: @background-color-menu-item-active;
+      }
+
+      &.hover {
+        color: @color-menu-item-hover;
+        background: @background-color-menu-item-hover;
+      }
+    }
+  }
+
+  &.dark {
+    @import 'themes/dark';
+
+    .ui.table {
+      border-color: @border-color-table;
+      background-color: @background-color-table;
+
+      thead th {
+        background-color: @background-color-thead-th;
+        color: @color-thead-th;
+      }
+
+      tr {
+        &:selected {
+          td {
+            color: @color-tr-selected-td;
+            background-color: @background-color-tr-selected-td;
+          }
+        }
+
+        td {
+          border-top-color: @border-color-tr-td;
+
+          &:first-child,
+          &:last-child {
+            background-color: @background-color-tr-td-child;
+          }
+        }
+
+        th:first-child,
+        th:last-child {
+          background-color: @background-color-tr-th-child;
+        }
+      }
+
+      tbody tr:hover td {
+        background: @background-tbody-tr-hover-td;
+        color: @color-tbody-tr-hover-td;
+      }
+    }
+
+    .ui.menu {
+      border-color: @border-color-menu;
+
+      a.item {
+        color: @color-menu-item;
+        background-color: @background-color-menu-item;
+
+        &.active {
+          color: @color-menu-item-active;
+          background: @background-color-menu-item-active;
+        }
+
+        &.hover {
+          color: @color-menu-item-hover;
+          background: @background-color-menu-item-hover;
+        }
+      }
+    }
+  }
+}
