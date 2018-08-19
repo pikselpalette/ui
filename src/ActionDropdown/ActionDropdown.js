@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Dropdown } from 'semantic-ui-react';
+import classNames from 'classnames';
 
-const ActionDropdown = props => (
-  <Dropdown className="palette-ui-action-dropdown" {...props} />
+const ActionDropdown = ({ variant, ...props }) => (
+  <Dropdown className={classNames('palette-ui-action-dropdown', variant)} {...props} />
 );
 
 export default ActionDropdown;
