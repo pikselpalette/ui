@@ -22,6 +22,9 @@ import './Button/Button.less';
 import CancelIcon from './CancelIcon/CancelIcon';
 import './CancelIcon/CancelIcon.less';
 
+import Centered from './Centered/Centered';
+import './Centered/Centered.less';
+
 export {
   A,
   ActionButton,
@@ -31,5 +34,6 @@ export {
   AutoRefreshWrapper,
   BrowseGrid,
   Button,
-  CancelIcon
+  CancelIcon,
+  Centered
 };
