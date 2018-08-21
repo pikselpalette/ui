@@ -2,15 +2,14 @@ import * as React from 'react';
 import { Button } from 'semantic-ui-react';
 import classNames from 'classnames';
 
-const AutoRefreshWrapper = ({ theme, variant, ...props }) => (
+const AutoRefreshWrapper = ({ variant = 'light', color, ...props }) => (
   <Button
     className={
       classNames(
         'palette-ui-auto-refresh-wrapper',
         'button',
-        { dark: theme === 'dark' },
-        { green: variant === 'green' },
-        { blue: variant === 'blue' }
+        variant,
+        color
       )
     }
     {...props}

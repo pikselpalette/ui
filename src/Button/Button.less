@@ -1,27 +1,10 @@
 @import 'themes/light';
+
 .palette-ui-button {
-  &&&&&&& {
-    &,
-    &.primary,
+  &&&&&&&.button {
+    margin: 0 10px 0 0;
+
     &.light {
-      min-height: 38px;
-      margin: 0 10px 0 0;
-
-      background-color: @background-color;
-      border-color: @border-color;
-      border-style: @border-style;
-      border-width: @border-width;
-      color: @color;
-
-      &:hover {
-        background-color: @background-color-hover;
-        color: @color-hover;
-      }
-    }
-
-    &.cta,
-    &.call-to-action {
-      @import 'themes/callToAction';
       background-color: @background-color;
       border-color: @border-color;
       border-style: @border-style;
@@ -36,6 +19,7 @@
 
     &.dark {
       @import 'themes/dark';
+
       background-color: @background-color;
       border-color: @border-color;
       border-style: @border-style;
@@ -47,5 +31,21 @@
         color: @color-hover;
       }
     }
+
+    &.cta {
+      @import 'themes/callToAction';
+
+      background-color: @background-color;
+      border-color: @border-color;
+      border-style: @border-style;
+      border-width: @border-width;
+      color: @color;
+
+      &:hover {
+        background-color: @background-color-hover;
+        color: @color-hover;
+      }
+    }
+
   }
 };

@@ -1,12 +1,13 @@
 import * as React from 'react';
+import classNames from 'classnames';
 
 const Centered = ({ horizontal, vertical, ...props}) => (
   <div
     className={
       classNames(
         'palette-ui-centered',
-        { horizontal: 'horizontal' },
-        { vertical: 'vertical' }
+        { horizontal },
+        { vertical }
       )
     }
     {...props}

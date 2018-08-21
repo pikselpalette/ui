@@ -1,3 +1,4 @@
+import 'semantic-ui-css/semantic.min.css';
 import A from './A/A';
 import './A/A.less';
 
@@ -31,9 +32,6 @@ import './CheckIcon/CheckIcon.less';
 import Clickable from './Clickable/Clickable';
 import './Clickable/Clickable.less';
 
-import CustomListTable from './CustomListTable';
-import './CustomListTable/CustomListTable.less';
-
 export {
   A,
   ActionButton,
@@ -46,6 +44,5 @@ export {
   CancelIcon,
   Centered,
   CheckIcon,
-  Clickable,
-  CustomListTable
+  Clickable
 };

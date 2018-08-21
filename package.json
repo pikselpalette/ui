@@ -7,7 +7,9 @@
     "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -i src/index.js -o dist/ui.js",
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -i src/index.js -o dist/ui.min.js",
     "build": "npm run build:umd && npm run build:umd:min",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
@@ -32,18 +34,27 @@
     "classnames": "^2.2.6",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-styleguidist": "^7.2.4",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.5",
+    "rollup-plugin-css-porter": "^0.1.2",
     "rollup-plugin-less-modules": "^0.1.1",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^4.0.0",
     "semantic-ui-react": "^0.82.2",
-    "style-loader": "^0.22.1"
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-blocks": "^1.0.0",
+    "webpack-blocks-less": "^0.2.0"
+  },
+  "dependencies": {
+    "semantic-ui-css": "^2.3.3"
   }
 }

@@ -5,3 +5,4 @@ const A = props => (
 );
 
 export default A;
+

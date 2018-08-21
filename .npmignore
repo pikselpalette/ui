@@ -1,5 +1,5 @@
 .babelrc
 .gitignore
 webpack.config.js
-example
+styleguide
 node_modules

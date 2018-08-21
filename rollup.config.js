@@ -2,6 +2,7 @@ import nodeResolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import replace from 'rollup-plugin-replace'
 import { uglify } from 'rollup-plugin-uglify'
+import css from 'rollup-plugin-css-porter'
 import lessModules from 'rollup-plugin-less-modules'
 import commonjs from 'rollup-plugin-commonjs';
 
@@ -10,6 +11,7 @@ const config = {
   input: 'src/index.js',
   plugins: [
     lessModules(),
+    css(),
     commonjs({
       include: [
         'node_modules/**'
